@@ -3,4 +3,4 @@ node_js:
   - "stable"
 cache: npm
 install:
-  - npm install
+  - cd server && npm install
