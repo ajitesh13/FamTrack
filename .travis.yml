@@ -4,3 +4,5 @@ node_js:
 cache: npm
 install:
   - cd server && npm install
+script:
+  - npm start
