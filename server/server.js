@@ -6,6 +6,7 @@ const app = express();
 app.use(cors());
 const userregister = require('./Routes/RegisterUserRoute');
 const userlogin = require('./Routes/LoginUser');
+const { MONGODB_URL } = require("./config");
 
 app.use(express.json());
 app.use(
@@ -17,7 +18,7 @@ app.use(
 app.use("/api", userregister);
 app.use("/api", userlogin);
 
-const mongodburl = config.MONGODB_URL;
+const mongodburl = config.MONGODB_URL || MONGODB_URL;
 mongoose
 .connect(mongodburl, {
     useNewUrlParser: true,
