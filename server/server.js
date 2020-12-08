@@ -6,6 +6,7 @@ const app = express();
 app.use(cors());
 const userregister = require('./Routes/RegisterUserRoute');
 const userlogin = require('./Routes/LoginUser');
+const addtrackee = require('./Routes/AddTrackee');
 const { MONGODB_URL } = require("./config");
 
 app.use(express.json());
@@ -17,6 +18,7 @@ app.use(
 
 app.use("/api", userregister);
 app.use("/api", userlogin);
+app.use("/api", addtrackee);
 
 const mongodburl = config.MONGODB_URL || MONGODB_URL;
 mongoose

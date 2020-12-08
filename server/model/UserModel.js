@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
         default: ''
     },
     Trackee: [{
-        id: {
+        email: {
             type: String,
             default: ''
         },
@@ -42,7 +42,7 @@ const userSchema = new mongoose.Schema({
         }
     }],
     Tracker: [{
-        id: {
+        email: {
             type: String,
             default: ''
         },
