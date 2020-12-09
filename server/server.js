@@ -4,9 +4,12 @@ const mongoose = require("mongoose");
 const cors = require('cors');
 const app = express();
 app.use(cors());
-const userregister = require('./Routes/RegisterUserRoute');
+const userregister = require('./Routes/RegisterUser');
 const userlogin = require('./Routes/LoginUser');
 const addtrackee = require('./Routes/AddTrackee');
+const gettrackee = require('./Routes/GetTrackee');
+const getuser = require('./Routes/GetUser');
+const savelocation = require('./Routes/SaveLocation');
 
 app.use(express.json());
 app.use(
@@ -18,6 +21,9 @@ app.use(
 app.use("/api", userregister);
 app.use("/api", userlogin);
 app.use("/api", addtrackee);
+app.use("/api", gettrackee);
+app.use("/api", getuser);
+app.use("/api", savelocation);
 
 const mongodburl = config.MONGODB_URL;
 mongoose

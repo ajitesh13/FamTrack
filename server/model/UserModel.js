@@ -13,45 +13,23 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: ''
     },
+    image: {
+        type: String,
+        default: ''
+    },
     Trackee: [{
-        email: {
+        Trackee_id: {
             type: String,
             default: ''
-        },
-        name: {
-            type: String,
-            default: ''
-        },
-        latitude: {
-            type: String,
-            default: '',
-        },
-        longitude: {
-            type: String,
-            default: ''
-        },
-        saved_location: {
-            latitude: {
-                type: String,
-                default: ''
-            }, 
-            longitude: {
-                type: String,
-                default: ''
-            }
         }
     }],
     Tracker: [{
-        email: {
-            type: String,
-            default: ''
-        },
-        name: {
+        Tracker_id: {
             type: String,
             default: ''
         }
     }],
-    saved_location: {
+    saved_location: [{
         latitude: {
             type: String,
             default: ''
@@ -60,7 +38,7 @@ const userSchema = new mongoose.Schema({
             type: String,
             default: ''
         }
-    }
+    }]
 });
 
 const User = mongoose.model('User', userSchema);

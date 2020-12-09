@@ -3,24 +3,21 @@ const express = require('express');
 const User = require('../model/UserModel');
 router.use(express.json());
 
-router.post("/addtrackee/:email", async(req, res) => { 
+router.post("/addtrackee", async(req, res) => { 
     try {
-        const user = await User.findOne({
-            email: req.body.Trackee[0].email
-        });
+        const user = await User.findById(req.body.Trackee[0].Trackee_id);
         if (user) {
             const tracker = await User.update(
-                { email: req.params.email },
+                { _id: req.body.Tracker[0].Tracker_id },
                 { $push: {Trackee: req.body.Trackee}}
             );
-            // res.send({"msg": "Trackee added"});
             const trackee = await User.update(
-                {email: req.body.Trackee[0].email},
+                {_id: req.body.Trackee[0].Trackee_id},
                 {$push: {Tracker: req.body.Tracker}}
             );
             res.send({"msg": "Trackee added successfully!"});
         } else {
-            res.send({"err": "trackee doesn't esists"});
+            res.send({"err": "Trackee doesn't esists"});
         }
     } catch(err) {
         res.send({"err": `${err}`});
