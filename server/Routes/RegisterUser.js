@@ -30,7 +30,11 @@ router.post("/register", async (req, res) => {
                 saved_location: [{
                     latitude: '', 
                     longitude: ''
-                }]
+                }],
+                current_location: {
+                    latitude: '',
+                    longitude: ''
+                }
             });
             newUser.save();
             res.send(newUser);

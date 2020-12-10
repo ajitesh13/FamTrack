@@ -38,7 +38,17 @@ const userSchema = new mongoose.Schema({
             type: String,
             default: ''
         }
-    }]
+    }],
+    current_location: {
+        latitude: {
+            type: String,
+            default: ''
+        }, 
+        longitude: {
+            type: String,
+            default: ''
+        }
+    }
 });
 
 const User = mongoose.model('User', userSchema);

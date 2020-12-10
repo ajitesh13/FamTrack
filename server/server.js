@@ -10,6 +10,7 @@ const addtrackee = require('./Routes/AddTrackee');
 const gettrackee = require('./Routes/GetTrackee');
 const getuser = require('./Routes/GetUser');
 const savelocation = require('./Routes/SaveLocation');
+const currentlocation = require('./Routes/AddCurrentLocation');
 
 app.use(express.json());
 app.use(
@@ -24,6 +25,7 @@ app.use("/api", addtrackee);
 app.use("/api", gettrackee);
 app.use("/api", getuser);
 app.use("/api", savelocation);
+app.use("/api", currentlocation);
 
 const mongodburl = config.MONGODB_URL;
 mongoose
