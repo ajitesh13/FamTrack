@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 });
 
 
-const port = process.config.PORT || 5000;
+const port = config.PORT;
 app.listen(port, () => {
     console.log(`Server running successfully at http://localhost:${port}`);
 });

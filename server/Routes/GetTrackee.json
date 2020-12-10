@@ -1,10 +1,11 @@
 {
-    "INPUT": {
-        "Tracker_id": "5fd0f64cde1f04353e48e02a"
-    },
-    "OUTPUT": [
-      "5fd0f682de1f04353e48e02e",
-      "5fd107288e013c3a1e6f3d61"
-    ],
-    "ERR_OUTPUT": {"err": "Tracker doesn't exist"}
+  "PATH": "/api/gettrackee",
+  "INPUT": {
+      "Tracker_id": "5fd0f64cde1f04353e48e02a"
+  },
+  "OUTPUT": [
+    "5fd0f682de1f04353e48e02e",
+    "5fd107288e013c3a1e6f3d61"
+  ],
+  "ERR_OUTPUT": {"err": "Tracker doesn't exist"}
 }

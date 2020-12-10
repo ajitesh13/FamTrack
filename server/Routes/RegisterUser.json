@@ -1,14 +1,15 @@
 {
     "INPUT": {
-        "name": "Ajitesh134",
-        "email": "aji@me.com",
-        "password": "1234"
+      "name": "Panda997",
+      "email": "bb@me.com",
+      "password": "1234",
+      "image": "str7"
     },
     "OUTPUT": {
         "name": "Ajitesh134",
         "email": "aji@me.com",
         "password": "1234",
-        "image": "",
+        "image": "str7",
         "_id": "5fd0f64cde1f04353e48e02a",
         "Trackee": [
           {

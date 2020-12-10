@@ -1,4 +1,5 @@
 {
+    "PATH": "/api/addtrackee",
     "INPUT": {
         "Trackee": [{
             "Trackee_id": "5fd0f682de1f04353e48e02e"

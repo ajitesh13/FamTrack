@@ -1,4 +1,5 @@
 {
+    "PATH": "/api/savelocation",
     "INPUT": {
         "id": "5fd0f64cde1f04353e48e02a",
         "Saved_location": [{

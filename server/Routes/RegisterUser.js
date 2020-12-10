@@ -15,10 +15,12 @@ router.post("/register", async (req, res) => {
             const name = req.body.name;
             const email = req.body.email;
             const password = req.body.password;
+            const image = req.body.image;
             const newUser = new User({
                 name: name,
                 email: email,
                 password: password,
+                image: image,
                 Trackee: [{
                     Trackee_id: ''
                 }],

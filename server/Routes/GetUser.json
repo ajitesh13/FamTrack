@@ -1,4 +1,5 @@
 {
+  "PATH": "/api/getuser",
     "INPUT": {
 	    "id": "5fd0f682de1f04353e48e02e"
     },
