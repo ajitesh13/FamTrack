@@ -1,0 +1,13 @@
+{
+    "PATH": "/api/addtrackee",
+    "INPUT": {
+        "Trackee": [{
+            "Trackee_id": "5fd0f682de1f04353e48e02e"
+        }],
+        "Tracker": [{
+            "Tracker_id": "5fd0f64cde1f04353e48e02a"
+        }]
+    },
+    "OUTPUT": { "msg": "Trackee added successfully!" },
+    "ERR_OUTPUT": { "err": "Trackee doesn't esists" }
+}

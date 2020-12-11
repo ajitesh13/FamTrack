@@ -2,13 +2,17 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "database.js",
   "scripts": {
-    "start": "node database.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cassandra-driver": "^4.6.1"
+    "cassandra-driver": "^4.6.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4",
+    "nodemon": "^2.0.6"
   }
 }

@@ -1,0 +1,12 @@
+{
+    "PATH": "/api/savelocation",
+    "INPUT": {
+        "id": "5fd0f64cde1f04353e48e02a",
+        "Saved_location": [{
+            "latitude": "230",
+            "longitude": "810"
+        }]
+    },
+    "OUTPUT": {"msg": "location saved"},
+    "ERR_OUTPUT": {"msg": "user doesn't exist"}
+}

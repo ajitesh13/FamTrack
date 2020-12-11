@@ -1,0 +1,55 @@
+{
+    "INPUT": {
+      "name": "Panda997",
+      "email": "bb@me.com",
+      "password": "1234",
+      "image": "str7"
+    },
+    "OUTPUT": {
+        "name": "Ajitesh134",
+        "email": "aji@me.com",
+        "password": "1234",
+        "image": "str7",
+        "_id": "5fd0f64cde1f04353e48e02a",
+        "Trackee": [
+          {
+            "Trackee_id": "",
+            "_id": "5fd0f64cde1f04353e48e02b"
+          },
+          {
+            "Trackee_id": "5fd0f682de1f04353e48e02e",
+            "_id": "5fd1062aeffd973950f6a4e5"
+          },
+          {
+            "Trackee_id": "5fd107288e013c3a1e6f3d61",
+            "_id": "5fd1077e8e013c3a1e6f3d69"
+          }
+        ],
+        "Tracker": [
+          {
+            "Tracker_id": "",
+            "_id": "5fd0f64cde1f04353e48e02c"
+          }
+        ],
+        "saved_location": [
+          {
+            "latitude": "",
+            "longitude": "",
+            "_id": "5fd0f64cde1f04353e48e02d"
+          },
+          null,
+          {
+            "latitude": "23",
+            "longitude": "81",
+            "_id": "5fd11524ba219d44473737f5"
+          },
+          {
+            "latitude": "230",
+            "longitude": "810",
+            "_id": "5fd1153cba219d44473737f6"
+          }
+        ],
+        "__v": 0
+    },
+    "ERR_OUTPUT": {"error": "registration error"}
+}

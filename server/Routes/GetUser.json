@@ -1,0 +1,38 @@
+{
+  "PATH": "/api/getuser",
+    "INPUT": {
+	    "id": "5fd0f682de1f04353e48e02e"
+    },
+    "OUTPUT": {
+        "name": "Panda123",
+        "email": "ty@me.com",
+        "password": "1234",
+        "image": "",
+        "_id": "5fd0f682de1f04353e48e02e",
+        "Trackee": [
+          {
+            "Trackee_id": "",
+            "_id": "5fd0f682de1f04353e48e02f"
+          }
+        ],
+        "Tracker": [
+          {
+            "Tracker_id": "",
+            "_id": "5fd0f682de1f04353e48e030"
+          },
+          {
+            "Tracker_id": "5fd0f64cde1f04353e48e02a",
+            "_id": "5fd1062aeffd973950f6a4e6"
+          }
+        ],
+        "saved_location": [
+          {
+            "latitude": "",
+            "longitude": "",
+            "_id": "5fd0f682de1f04353e48e031"
+          }
+        ],
+        "__v": 0
+    },
+    "ERR_OUTPUT": {"err": "User doesn't exist"}
+}

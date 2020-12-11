@@ -1,0 +1,14 @@
+{
+    "PATH": "/api/addlocation",
+    "INPUT": {
+        "id": "5fd28af861ab1de6059c8f44",
+        "location": {
+            "latitude": "00",
+            "longitude": "000"
+        }
+    },
+    "OUTPUT": {
+        "msg": "Location Saved!"
+    },
+    "ERR_OUTPUT": {"msg": "user doesn't exist"}
+}
