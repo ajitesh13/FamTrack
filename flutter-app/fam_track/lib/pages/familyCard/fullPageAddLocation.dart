@@ -93,9 +93,16 @@ class _FullPageAddLocationState extends State<FullPageAddLocation>{
       link=link+str+"%20";
     }
     if(placeName.length > 1) {
+      setState(() {
+        isLoadingOffStaged = false;
+      });
       fetchLatLong(link).then((value) {
-        if (value.latitude != 0.0 && value.longitude != 0.0)
+        if (value.latitude != 0.0 && value.longitude != 0.0){
           controller.move(value, 13);
+        }
+        setState(() {
+          isLoadingOffStaged = true;
+        });
       });
     }
   }
